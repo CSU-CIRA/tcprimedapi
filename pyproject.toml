@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tcprimedapi"
+dynamic = ["version"]
+description = "An API to pull TC PRIMED files based on user requests."
+readme = "README.md"
+license = {file = "LICENSE"}
+
+authors = [
+    { name = "TC PRIMED Development Team", email = "CIRA_tcprimed@colostate.edu" },
+]
+
+keywords = ["tools",]
+
+requires-python = ">= 3.9"
+dependencies = [
+  "boto3>=1.34",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Database :: Front-Ends",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+
+[project.urls]
+Homepage = "https://rammb-data.cira.colostate.edu/tcprimed/"
+Repository = "https://github.com/CSU-CIRA/tcprimedapi/"
+
+[tool.setuptools.dynamic]
+version = {attr = "tcprimedapi.__version__"}
