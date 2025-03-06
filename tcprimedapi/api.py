@@ -39,8 +39,8 @@ TCPRIMED_SENSORS = [
 # Valid intruments in TC PRIMED
 TCPRIMED_PLATFORMS = [
     "GCOMW1", "AQUA", "NOAA15", "NOAA16", "NOAA17", "NOAA18", "NOAA19",
-    "NOAA20", "NOAA21", "NPP", "GPM", "METOPA", "METOPB", "METOPC", "F11",
-    "F13", "F14", "F15", "F16", "F17", "F18", "F19", "TRMM"
+    "NOAA20", "NOAA21", "NPP", "GPM", "METOPA", "METOPB", "METOPC", "F08",
+    "F10", "F11", "F13", "F14", "F15", "F16", "F17", "F18", "F19", "TRMM"
 ]
 # Valid environmental file
 TCPRIMED_ENV = ['env']
